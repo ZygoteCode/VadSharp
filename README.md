@@ -34,6 +34,7 @@ This project represents **my first significant contribution to the world of arti
 # Install ONNXRuntime and ML.NET
 Install-Package Microsoft.ML.OnnxRuntime
 Install-Package Microsoft.ML
+Install-Package NAudio
 ```
 
 ---
