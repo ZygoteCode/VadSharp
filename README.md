@@ -4,7 +4,7 @@
 
 ## 🚀 The Best VAD Implementation in C#
 
-VadSharp is the **first and most efficient** implementation of **Silero VAD in C#**, supporting the latest **V5 model** with all its advanced features. It is faster than the original Python version and runs on **any GPU (NVIDIA, AMD, Intel) and CPU** with **ONNXRuntime and DirectML**.
+VadSharp is the **first and most efficient** implementation of **[Silero VAD](https://github.com/snakers4/silero-vad/) in C#**, supporting the latest **V5 model** with all its advanced features. It is faster than the original Python version and runs on **any GPU (NVIDIA, AMD, Intel) and CPU** with **ONNXRuntime and DirectML**.
 
 This project represents **my first significant contribution to the world of artificial intelligence in terms of development**, and I sincerely hope that users will appreciate this effort. Your support and feedback are highly valued! 🙌
 
@@ -131,7 +131,7 @@ I will review and respond ASAP! 🚀
 
 ## ✨ Credits
 
-All of my credits go to the original inventor of the [Silero VAD](https://github.com/snakers4/silero-vad) project,
+All of my credits go to the original inventor of the [Silero VAD](https://github.com/snakers4/silero-vad/) project,
 which has worked hard to the architecture of the algorithm and trained the models!
 
 ## 📜 License
