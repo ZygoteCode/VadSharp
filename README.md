@@ -92,7 +92,7 @@ public class Program
 
 ## 🌟 Contributing
 
-We welcome contributions! 🚀 Follow these steps to create a **Pull Request (PR):**
+Contributions are welcome there! 🚀 Follow these steps to create a **Pull Request (PR):**
 
 1. **Fork the repository**
 2. **Clone your fork**:
@@ -139,4 +139,3 @@ which has worked hard to the architecture of the algorithm and trained the model
 VadSharp is licensed under the **MIT License**. Feel free to use, modify, and distribute it as you like!
 
 📌 **Made with ❤️ by [GabryB03](https://github.com/GabryB03/)**
-
