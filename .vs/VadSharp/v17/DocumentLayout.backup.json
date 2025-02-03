@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bolog\\Desktop\\VadSharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9C9F6E2-E55A-4A5D-9F72-60EF8D921DC4}|VadSharp.csproj|c:\\users\\bolog\\desktop\\vadsharp\\vadonnxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9C9F6E2-E55A-4A5D-9F72-60EF8D921DC4}|VadSharp.csproj|solutionrelative:vadonnxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9C9F6E2-E55A-4A5D-9F72-60EF8D921DC4}|VadSharp.csproj|c:\\users\\bolog\\desktop\\vadsharp\\vaddetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9C9F6E2-E55A-4A5D-9F72-60EF8D921DC4}|VadSharp.csproj|solutionrelative:vaddetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9C9F6E2-E55A-4A5D-9F72-60EF8D921DC4}|VadSharp.csproj|c:\\users\\bolog\\desktop\\vadsharp\\vadspeechsegment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9C9F6E2-E55A-4A5D-9F72-60EF8D921DC4}|VadSharp.csproj|solutionrelative:vadspeechsegment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VadSpeechSegment.cs",
+              "DocumentMoniker": "C:\\Users\\bolog\\Desktop\\VadSharp\\VadSpeechSegment.cs",
+              "RelativeDocumentMoniker": "VadSpeechSegment.cs",
+              "ToolTip": "C:\\Users\\bolog\\Desktop\\VadSharp\\VadSpeechSegment.cs",
+              "RelativeToolTip": "VadSpeechSegment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T20:20:18.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VadOnnxModel.cs",
+              "DocumentMoniker": "C:\\Users\\bolog\\Desktop\\VadSharp\\VadOnnxModel.cs",
+              "RelativeDocumentMoniker": "VadOnnxModel.cs",
+              "ToolTip": "C:\\Users\\bolog\\Desktop\\VadSharp\\VadOnnxModel.cs",
+              "RelativeToolTip": "VadOnnxModel.cs",
+              "ViewState": "AgIAANEAAAAAAAAAAAAswN0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T20:20:13.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VadDetector.cs",
+              "DocumentMoniker": "C:\\Users\\bolog\\Desktop\\VadSharp\\VadDetector.cs",
+              "RelativeDocumentMoniker": "VadDetector.cs",
+              "ToolTip": "C:\\Users\\bolog\\Desktop\\VadSharp\\VadDetector.cs",
+              "RelativeToolTip": "VadDetector.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T20:18:48.863Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
