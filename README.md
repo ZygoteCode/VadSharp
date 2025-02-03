@@ -129,6 +129,11 @@ I will review and respond ASAP! 🚀
 
 ---
 
+## ✨ Credits
+
+All of my credits go to the original inventor of the [Silero VAD](https://github.com/snakers4/silero-vad) project,
+which has worked to the architecture of the algorithm and trained the models!
+
 ## 📜 License
 
 VadSharp is licensed under the **MIT License**. Feel free to use, modify, and distribute it as you like!
