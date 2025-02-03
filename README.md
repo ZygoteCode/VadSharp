@@ -124,7 +124,7 @@ If you find a bug or have a feature request, please **open an issue**:
 3. Provide a **clear and concise** description of the problem.
 4. If possible, include **screenshots and logs**.
 
-We will review and respond ASAP! 🚀
+I will review and respond ASAP! 🚀
 
 ---
 
