@@ -148,4 +148,4 @@ VadSharp is licensed under the **MIT License**. Feel free to use, modify, and di
 - [ ] Choose if to use DirectML (for GPU processing) or not
 - [ ] Batch processing
 - [ ] Real-time processing
-- [ ] Hash-check the Silero VAD V5 model
+- [x] Hash-check the Silero VAD V5 model
