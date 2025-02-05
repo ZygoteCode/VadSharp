@@ -11,17 +11,20 @@ namespace VadSharp
         private int lastSr, lastBatchSize;
         private static readonly int[] SupportedRates = { 8000, 16000 };
 
-        public VadOnnxModel(string modelPath)
+        public VadOnnxModel(string modelPath, bool useDirectML = true)
         {
             var sessionOptions = new SessionOptions();
 
-            try
+            if (useDirectML)
             {
-                sessionOptions.AppendExecutionProvider_DML();
-            }
-            catch
-            {
+                try
+                {
+                    sessionOptions.AppendExecutionProvider_DML();
+                }
+                catch
+                {
 
+                }
             }
 
             sessionOptions.InterOpNumThreads = 1;

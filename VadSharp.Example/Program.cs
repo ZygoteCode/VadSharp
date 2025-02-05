@@ -9,6 +9,7 @@ public class Program
     private const float MAX_SPEECH_DURATION_SECONDS = float.PositiveInfinity;
     private const int MIN_SILENCE_DURATION_MS = 100;
     private const int SPEECH_PAD_MS = 30;
+    private const bool USE_DIRECT_ML = true;
 
     public static void Main()
     {
@@ -29,7 +30,7 @@ public class Program
             return;
         }
 
-        VadDetector vadDetector = new VadDetector(modelPath, THRESHOLD, SAMPLE_RATE, MIN_SPEECH_DURATION_MS, MAX_SPEECH_DURATION_SECONDS, MIN_SILENCE_DURATION_MS, SPEECH_PAD_MS);
+        VadDetector vadDetector = new VadDetector(modelPath, THRESHOLD, SAMPLE_RATE, MIN_SPEECH_DURATION_MS, MAX_SPEECH_DURATION_SECONDS, MIN_SILENCE_DURATION_MS, SPEECH_PAD_MS, USE_DIRECT_ML);
         List<VadSpeechSegment> speechTimeList = vadDetector.GetSpeechSegmentList(audioPath);
         StringBuilder sb = new StringBuilder();
 

@@ -22,7 +22,7 @@ namespace VadSharp
         private const int SAMPLING_RATE_16K = 16000;
         private const string _modelHash = "b9c04ff4e988465815742fcf8ee0f56b03b853aac446c8b9ef95bbc39a29be1341008fb2f1500efbbf41ae26ac64023f4dbe1c631003a3d93656f6b24cb25e7c";
 
-        public VadDetector(string onnxModelPath, float threshold, int samplingRate, int minSpeechDurationMs, float maxSpeechDurationSeconds, int minSilenceDurationMs, int speechPadMs)
+        public VadDetector(string onnxModelPath, float threshold, int samplingRate, int minSpeechDurationMs, float maxSpeechDurationSeconds, int minSilenceDurationMs, int speechPadMs, bool useDirectML = true)
         {
             if (samplingRate != SAMPLING_RATE_8K && samplingRate != SAMPLING_RATE_16K)
             {
@@ -39,7 +39,7 @@ namespace VadSharp
                 throw new ArgumentException("Model not supported");
             }
 
-            _model = new VadOnnxModel(onnxModelPath);
+            _model = new VadOnnxModel(onnxModelPath, useDirectML);
             _samplingRate = samplingRate;
             _threshold = threshold;
             _negThreshold = threshold - THRESHOLD_GAP;
