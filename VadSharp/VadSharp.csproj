@@ -13,4 +13,12 @@
     <PackageReference Include="NAudio" Version="2.2.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="C:\Users\bolog\.nuget\packages\microsoft.ai.directml\1.15.2\build\..\bin\x64-win\DirectML.Debug.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\bolog\.nuget\packages\microsoft.ai.directml\1.15.2\build\..\bin\x64-win\DirectML.Debug.dll" />
+  </ItemGroup>
+
 </Project>
