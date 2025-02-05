@@ -145,7 +145,7 @@ VadSharp is licensed under the **MIT License**. Feel free to use, modify, and di
 - [x] Automatic resample to 8 kHz / 16 kHz
 - [ ] Process a float[] buffer instead of only a wave file
 - [ ] Use FFMPEG to allow every format to be uploaded
-- [ ] Choose if to use DirectML (for GPU processing) or not
+- [x] Choose if to use DirectML (for GPU processing) or not
 - [ ] Batch processing
 - [ ] Real-time processing
 - [x] Hash-check the Silero VAD V5 model
