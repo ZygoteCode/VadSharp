@@ -75,6 +75,70 @@ namespace VadSharp
             return CalculateProb(speechProbList);
         }
 
+        public List<VadSpeechSegment> GetSpeechSegmentList(float[] audioBuffer, int originalSampleRate)
+        {
+            audioBuffer = ResampleAudioBuffer(audioBuffer, originalSampleRate, 16000);
+            Reset();
+
+            var speechProbList = new List<float>();
+            int totalSamples = audioBuffer.Length;
+            int window = _windowSizeSample;
+
+            for (int i = 0; i < totalSamples; i += window)
+            {
+                float[] buffer = new float[window];
+                int remaining = totalSamples - i;
+
+                if (remaining >= window)
+                {
+                    Array.Copy(audioBuffer, i, buffer, 0, window);
+                }
+                else
+                {
+                    Array.Copy(audioBuffer, i, buffer, 0, remaining);
+                    for (int j = remaining; j < window; j++)
+                    {
+                        buffer[j] = 0f;
+                    }
+                }
+
+                float speechProb = _model.Call(new[] { buffer }, _samplingRate)[0];
+                speechProbList.Add(speechProb);
+            }
+
+            return CalculateProb(speechProbList);
+        }
+
+        private float[] ResampleAudioBuffer(float[] audioBuffer, int originalRate, int targetRate)
+        {
+            if (originalRate == targetRate)
+            {
+                return audioBuffer;
+            }
+
+            double ratio = (double)targetRate / originalRate;
+            int newLength = (int)(audioBuffer.Length * ratio);
+            float[] resampledBuffer = new float[newLength];
+
+            for (int i = 0; i < newLength; i++)
+            {
+                double origPos = i / ratio;
+                int index = (int)Math.Floor(origPos);
+                double frac = origPos - index;
+
+                if (index + 1 < audioBuffer.Length)
+                {
+                    resampledBuffer[i] = (float)(audioBuffer[index] * (1 - frac) + audioBuffer[index + 1] * frac);
+                }
+                else
+                {
+                    resampledBuffer[i] = audioBuffer[index];
+                }
+            }
+
+            return resampledBuffer;
+        }
+
         private List<VadSpeechSegment> CalculateProb(List<float> speechProbList)
         {
             var result = new List<VadSpeechSegment>();
