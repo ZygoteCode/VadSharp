@@ -1,4 +1,5 @@
 ﻿using NAudio.Wave;
+using NAudio.Wave.SampleProviders;
 
 namespace VadSharp
 {
@@ -46,13 +47,14 @@ namespace VadSharp
         public List<VadSpeechSegment> GetSpeechSegmentList(FileInfo wavFile)
         {
             Reset();
-            using var audioFile = new AudioFileReader(wavFile.FullName);
+            using var reader = new AudioFileReader(wavFile.FullName);
+            var resampler = new WdlResamplingSampleProvider(reader, _samplingRate);
             var speechProbList = new List<float>();
-            _audioLengthSamples = (int)(audioFile.Length / 2);
+            _audioLengthSamples = (int)(reader.Length / 2);
             int window = _windowSizeSample;
             float[] buffer = new float[window];
 
-            while (audioFile.Read(buffer, 0, window) > 0)
+            while (resampler.Read(buffer, 0, window) > 0)
             {
                 float speechProb = _model.Call(new[] { buffer }, _samplingRate)[0];
                 speechProbList.Add(speechProb);
@@ -77,8 +79,11 @@ namespace VadSharp
                 if (prob >= _threshold && tempEnd != 0)
                 {
                     tempEnd = 0;
+
                     if (nextStart < prevEnd)
+                    {
                         nextStart = currentOffset;
+                    }
                 }
 
                 if (prob >= _threshold && !triggered)

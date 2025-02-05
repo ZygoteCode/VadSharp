@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\bolog\\Desktop\\VadSharp\\VadSharp\\",
+  "WorkspaceRootPath": "C:\\Users\\bolog\\Desktop\\VadSharp\\VadSharp\\VadSharp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9720E5DF-3AEC-4506-855D-9D20D8EED77F}|..\\VadSharp.Example\\VadSharp.Example.csproj|c:\\users\\bolog\\desktop\\vadsharp\\vadsharp.example\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9C9F6E2-E55A-4A5D-9F72-60EF8D921DC4}|VadSharp.csproj|c:\\users\\bolog\\desktop\\vadsharp\\vadsharp\\vadsharp\\vaddetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9C9F6E2-E55A-4A5D-9F72-60EF8D921DC4}|VadSharp.csproj|solutionrelative:vaddetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9720E5DF-3AEC-4506-855D-9D20D8EED77F}|..\\VadSharp.Example\\VadSharp.Example.csproj|c:\\users\\bolog\\desktop\\vadsharp\\vadsharp\\vadsharp.example\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,14 +22,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\bolog\\Desktop\\VadSharp\\VadSharp.Example\\Program.cs",
-              "RelativeDocumentMoniker": "..\\VadSharp.Example\\Program.cs",
-              "ToolTip": "C:\\Users\\bolog\\Desktop\\VadSharp\\VadSharp.Example\\Program.cs",
-              "RelativeToolTip": "..\\VadSharp.Example\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAvAAAAAAAAAA==",
+              "Title": "VadDetector.cs",
+              "DocumentMoniker": "C:\\Users\\bolog\\Desktop\\VadSharp\\VadSharp\\VadSharp\\VadDetector.cs",
+              "RelativeDocumentMoniker": "VadDetector.cs",
+              "ToolTip": "C:\\Users\\bolog\\Desktop\\VadSharp\\VadSharp\\VadSharp\\VadDetector.cs",
+              "RelativeToolTip": "VadDetector.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAMwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T12:28:26.827Z",
+              "WhenOpened": "2025-02-05T12:33:04.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bolog\\Desktop\\VadSharp\\VadSharp\\VadSharp.Example\\Program.cs",
+              "RelativeDocumentMoniker": "..\\VadSharp.Example\\Program.cs",
+              "ToolTip": "C:\\Users\\bolog\\Desktop\\VadSharp\\VadSharp\\VadSharp.Example\\Program.cs",
+              "RelativeToolTip": "..\\VadSharp.Example\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T12:32:23.703Z",
               "EditorCaption": ""
             }
           ]
