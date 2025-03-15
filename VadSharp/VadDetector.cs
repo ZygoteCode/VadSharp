@@ -20,7 +20,7 @@ namespace VadSharp
         private const float THRESHOLD_GAP = 0.15f;
         private const int SAMPLING_RATE_8K = 8000;
         private const int SAMPLING_RATE_16K = 16000;
-        private const string _modelHash = "b9c04ff4e988465815742fcf8ee0f56b03b853aac446c8b9ef95bbc39a29be1341008fb2f1500efbbf41ae26ac64023f4dbe1c631003a3d93656f6b24cb25e7c";
+        private const string _modelHash = "47d6ceb95435caf8049e0ea17a4dd95580e8a5950976ec770962c5534e64f2ea71ce196957102104fe014a2bdfa766f323ab5e46b6beb1fc46db129622298913";
 
         public VadDetector(string onnxModelPath, float threshold, int samplingRate, int minSpeechDurationMs, float maxSpeechDurationSeconds, int minSilenceDurationMs, int speechPadMs, bool useDirectML = true)
         {
@@ -29,9 +29,9 @@ namespace VadSharp
                 throw new ArgumentException("Sampling rate not supported, only available for [8000, 16000]");
             }
 
-            SHA3_512 sha3 = SHA3_512.Create();
+            SHA512 sha2_512 = SHA512.Create();
             byte[] loadedModelBytes = File.ReadAllBytes(onnxModelPath);
-            byte[] hashedModel = sha3.ComputeHash(loadedModelBytes);
+            byte[] hashedModel = sha2_512.ComputeHash(loadedModelBytes);
             string hashString = BitConverter.ToString(hashedModel).Replace("-", "").ToLower();
             
             if (hashString != _modelHash)
