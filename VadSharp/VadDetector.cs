@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography;
+﻿using System.Reflection.PortableExecutable;
+using System.Security.Cryptography;
 using NAudio.Wave;
 using NAudio.Wave.SampleProviders;
 
@@ -82,6 +83,7 @@ namespace VadSharp
 
             var speechProbList = new List<float>();
             int totalSamples = audioBuffer.Length;
+            _audioLengthSamples = totalSamples;
             int window = _windowSizeSample;
 
             for (int i = 0; i < totalSamples; i += window)
